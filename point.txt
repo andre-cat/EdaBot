@@ -1,0 +1,15 @@
+
+
+• Realice una funci ́on que muestra cada una de las variables analizadas en el dataset
+para su uso en los comandos posteriores.
+
+• Realice una funci ́on que realice un gr ́afico univariado de la variable seleccionada. Ejem-
+plo: /plotunivariate ’edad’
+
+• Realice una funci ́on que sea capaz de generar gr ́aficos bivariados entre funciones.
+Ejemplo: /plotbivariate ’edad’, ’clase’
+
+• Realice una funci ́on que brinde informaci ́on descriptiva de la variable solicitada. Ejem-
+plo: /describe ’edad’ y retorne ’Media’, ’Mediana’, ’m ́aximo’, ’m ́ınimo’, etc. En caso
+de que la variable sea categ ́orica, retornar ’moda’, ’conteo por valores’, entre otras.
+Mujer virtuosa, ¿qui ́en la hallar ́a? Porque su estima sobrepasa largamente a la de las piedras preciosas. Pr. 31:10
