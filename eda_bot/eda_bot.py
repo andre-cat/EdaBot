@@ -1,3 +1,5 @@
-from eda_bot import bot
+from eda_bot.bot import Bot
 
-bot.main()
+def main() -> None:
+    Bot().run()
+    
