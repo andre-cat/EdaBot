@@ -17,7 +17,8 @@ import time
 
 sb.set_style(style='whitegrid')
 sb.set_context(context='notebook')
-pp.rcParams['figure.figsize'] = (10, 7)
+pp.rcParams['figure.figsize'] = (100, 100)
+
 
 class Bot:
 
@@ -119,7 +120,8 @@ class Bot:
                         x=cls.__varu,
                         kind='count',
                         palette='PiYG').set(title=f'Frequency for "{cls.__varu}" var')
-                    path = commons.get_path('eda_bot\\sources\\images','/plotu.png')
+
+                    path = commons.get_path('eda_bot\\sources\\images', '/plotu.png')
                     file = plot.savefig(path)
                     update.message.bot.send_photo(update.message.chat.id, open(path, 'rb'))
                     update.message.bot.send_document(update.message.chat.id, open(path, 'rb'))
@@ -141,7 +143,7 @@ class Bot:
                     cls.__isawait = True
                     update.message.reply_text('_Enter the variables (2) for bivariate graph:_', parse_mode='Markdown')
                 elif sucess == True:
-                    update.message.reply_text(f'Bivariate graph for *{cls.__varb[0]}* and *{cls.__varb[1]}*:',parse_mode='Markdown')
+                    update.message.reply_text(f'Bivariate graph for *{cls.__varb[0]}* and *{cls.__varb[1]}*:', parse_mode='Markdown')
 
                     type_1: str = str(cls.__data[cls.__varb[0]].dtype).replace('object', 'str').replace('int64', 'num').replace('float64', 'num')
                     type_2: str = str(cls.__data[cls.__varb[1]].dtype).replace('object', 'str').replace('int64', 'num').replace('float64', 'num')
@@ -163,7 +165,7 @@ class Bot:
                             y=cls.__varb[1]
                         ).figure
 
-                    path = commons.get_path('eda_bot\\sources\\images','plotb.png')
+                    path = commons.get_path('eda_bot\\sources\\images', 'plotb.png')
 
                     file = plot.savefig(path)
                     update.message.bot.send_photo(update.message.chat.id, open(path, 'rb'))
