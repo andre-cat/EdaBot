@@ -299,8 +299,6 @@ class Bot:
                         'See vars with /vars command or\n'
                         f'try writing vars between spaces: {chr(34)}var1 var2{chr(34)}')
 
-        print('START')
-
         updater: TUpdater = TUpdater(constants.TOKEN, use_context=True)
         dispatcher: TDispatcher = updater.dispatcher  # type: ignore
 

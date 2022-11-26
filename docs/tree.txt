@@ -1,0 +1,22 @@
+eda_bot
+├─ docs
+│  └─ readme.txt
+├─ eda_bot
+│  ├─ __pycache__
+│  ├─ sources
+│  │  ├─ images
+│  │  │   ├─ plotb.png
+│  │  │   └─ plotu.png
+│  │  └─ texts
+│  │      └─ titanic.csv
+│  ├─ __init__.py
+│  ├─ __main__.py
+│  ├─ bot.py
+│  ├─ commons.py
+│  ├─ constants.py
+│  ├─ eda_bot.py
+│  └─ titanic.py
+├─ README.md
+├─ pixel_earth.png
+├─ requirements.txt
+└─ setup.py

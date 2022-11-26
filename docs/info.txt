@@ -1,0 +1,3 @@
+Bot name:           ExpDataBot
+Bot telegram link:  @exp_data_bot
+Bot web page:       https://t.me/exp_data_bot

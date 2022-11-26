@@ -1,0 +1,37 @@
+1. Open CWD:
+
+eda_bot <- CWD
+├─ docs
+│  └─ readme.txt
+├─ eda_bot
+│  ├─ __pycache__
+│  ├─ sources
+│  │  ├─ images
+│  │  │   ├─ plotb.png
+│  │  │   └─ plotu.png
+│  │  └─ texts
+│  │      └─ titanic.csv
+│  ├─ __init__.py
+│  ├─ __main__.py
+│  ├─ bot.py
+│  ├─ commons.py
+│  ├─ constants.py
+│  ├─ eda_bot.py
+│  └─ titanic.py
+├─ README.md
+├─ pixel_earth.png
+├─ requirements.txt
+└─ setup.py
+
+2. Create virtual enviroment
+CWD>pip install virtualenv
+CWD>virtualenv env
+
+3. Activate virtual enviroment
+CWD>env\scripts\activate
+
+4. Install requirements:
+CWD>pip install -r requirements.txt
+
+5. Run:
+CWD>py -m eda_bot
